@@ -6,7 +6,7 @@ public class KadanesAlgorithm {
         int current_max = arr[0];
         for(int i=1; i<arr.length; i++){
             current_max = Math.max(arr[i], current_max+arr[i]);
-            max_so_far = Math.min(current_max, max_so_far);
+            max_so_far = Math.max(current_max, max_so_far);
 
         }
     return max_so_far;
